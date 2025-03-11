@@ -6,6 +6,16 @@
 
 body {
     height: 100vh;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.25rem;
 }
 
 .author-info {
@@ -17,4 +27,45 @@ body {
 
 .author-info a {
     text-decoration: none;
+}
+
+.title {
+    margin-top: 2.5rem;
+}
+
+.separator {
+    margin-top: 2.5rem;
+}
+
+.article {
+    display: flex;
+    gap: 2rem;
+    margin: 2.5rem 0;
+    text-align: left;
+    flex-direction: column;
+}
+
+.article-image {
+    border-radius: .5rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.article-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.article-date {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #4D5562;
+    margin-top: 1rem;
+}
+
+@media (min-width: 412px) {
+    .article {
+        flex-direction: row;
+        align-items: center;
+    }
 }
